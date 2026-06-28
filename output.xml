@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-06-28T23:03:34.852983" rpa="false" schemaversion="5">
+<suite id="s1" name="Task 19" source="C:\Users\priya\PycharmProjects\PythonProject4\Robot_framework_Project\Testcases\Task_19.robot">
+<test id="s1-t1" name="TestCase01" line="11">
+<kw name="BrowserSettings">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-06-28T23:03:35.364558" level="INFO">Opening browser 'chrome' to base url 'https://robotsparebinindustries.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-06-28T23:03:35.363468" elapsed="3.115170"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-06-28T23:03:38.479063" elapsed="0.063963"/>
+</kw>
+<status status="PASS" start="2026-06-28T23:03:35.358661" elapsed="3.184551"/>
+</kw>
+<kw name="LoginToApplication">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-28T23:03:38.544885" level="INFO">Typing text 'maria' into text field 'id:username'.</msg>
+<arg>id:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-28T23:03:38.544102" elapsed="0.267870"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-28T23:03:38.812791" level="INFO">Typing text 'thoushallnotpass' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-28T23:03:38.812276" elapsed="0.237148"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-28T23:03:39.050201" level="INFO">Clicking element 'xpath://button[normalize-space()='Log in']'.</msg>
+<arg>xpath://button[normalize-space()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-28T23:03:39.049721" elapsed="0.131949"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-06-28T23:03:49.182761" level="INFO">Slept 10 seconds.</msg>
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-06-28T23:03:39.181897" elapsed="10.001092"/>
+</kw>
+<status status="PASS" start="2026-06-28T23:03:38.543671" elapsed="10.639547"/>
+</kw>
+<kw name="VerifyLogin">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-06-28T23:03:49.257704" level="INFO">Element 'Id:logout' is displayed.</msg>
+<arg>Id:logout</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-28T23:03:49.184220" elapsed="0.073698"/>
+</kw>
+<kw name="Set Test Message" owner="BuiltIn">
+<msg time="2026-06-28T23:03:49.258755" level="INFO">Set test message to:
+Logged in successfully</msg>
+<arg>Logged in successfully</arg>
+<doc>Sets message for the current test case.</doc>
+<status status="PASS" start="2026-06-28T23:03:49.258229" elapsed="0.000638"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Logged in successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-06-28T23:03:49.259115" elapsed="0.000666"/>
+</kw>
+<status status="PASS" start="2026-06-28T23:03:49.183759" elapsed="0.076219"/>
+</kw>
+<kw name="LogOutApplication">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-28T23:03:49.261539" level="INFO">Clicking element 'Id:logout'.</msg>
+<arg>Id:logout</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-28T23:03:49.261027" elapsed="0.157598"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Logged out successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-06-28T23:03:49.419945" elapsed="0.001300"/>
+</kw>
+<kw name="Set Test Message" owner="BuiltIn">
+<msg time="2026-06-28T23:03:49.422466" level="INFO">Set test message to:
+Logged out successfully</msg>
+<arg>Logged out successfully</arg>
+<doc>Sets message for the current test case.</doc>
+<status status="PASS" start="2026-06-28T23:03:49.421694" elapsed="0.001088"/>
+</kw>
+<status status="PASS" start="2026-06-28T23:03:49.260445" elapsed="0.162625"/>
+</kw>
+<kw name="CloseBrowserSettings">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-06-28T23:03:49.424406" elapsed="2.654842"/>
+</kw>
+<status status="PASS" start="2026-06-28T23:03:49.423736" elapsed="2.656268"/>
+</kw>
+<status status="PASS" start="2026-06-28T23:03:35.357638" elapsed="16.724686">Logged out successfully</status>
+</test>
+<status status="PASS" start="2026-06-28T23:03:34.857803" elapsed="17.229107"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Task 19" id="s1" pass="1" fail="0" skip="0">Task 19</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
